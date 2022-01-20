@@ -13,6 +13,10 @@
     list-style: none;
     box-sizing: border-box;
 }
+*:focus {
+    outline: none;
+}
+
 html, body {
     padding: 0;
     margin: 0;
@@ -44,7 +48,7 @@ input::-webkit-inner-spin-button {
 
 /* HEADER TOP */
 .header-top{
-    width: 1200px;
+    width: var(--general-width);
     margin: 0 auto;
     padding-top: 14px;
     position: relative;
@@ -67,5 +71,25 @@ input::-webkit-inner-spin-button {
 }
 .header-top ul li a {
     color: #7b7b7b;
+}
+
+.main-header{
+    display: flex;
+    width: var(--general-width);
+    margin: 0 auto;
+    padding-bottom: 16px;
+    height: 64px;
+}
+.main-header .logo{
+    /*background-color: yellow;*/
+    width: 262px;
+}
+.main-header .search{
+    /*background-color: red;*/
+    flex: 1;
+}
+.main-header .account{
+    /*background-color: rebeccapurple;*/
+    flex: 1;
 }
 /* HEADER TOP */

@@ -10,6 +10,14 @@ export default {
   name: "Home",
   components : {
     Header,
+  },
+  methods : {
+    pageClick({target}){
+      console.log(target)
+    }
+  },
+  mounted() {
+    document.addEventListener('click',this.pageClick)
   }
 }
 </script>
