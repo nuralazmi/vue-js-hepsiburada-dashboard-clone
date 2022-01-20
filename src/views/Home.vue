@@ -13,7 +13,9 @@ export default {
   },
   methods : {
     pageClick({target}){
-      console.log(target)
+      if(!target.classList.contains('search-result') && !target.classList.contains('header-search')) {
+        this.$store.commit('general/setSearchResult',false)
+      }
     }
   },
   mounted() {
